@@ -1251,7 +1251,8 @@ body.light .footer span{
 }
 
 .hero-text h1{
-    font-size:42px;
+    font-size:2rem;
+    line-height: 1.2;
 }
 
 .hero-text h2{

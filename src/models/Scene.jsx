@@ -11,6 +11,9 @@ function Butterfly() {
   const { scene } = useGLTF("/models/butterfly/butterfly.glb");
   const butterflyRef = useRef();
 
+  // تشخیص موبایل
+  const isMobile = window.innerWidth <= 768;
+
   useFrame(({ clock }) => {
     if (butterflyRef.current) {
       butterflyRef.current.position.y =
@@ -27,7 +30,7 @@ function Butterfly() {
     <primitive
       ref={butterflyRef}
       object={scene}
-      scale={0.2}
+      scale={isMobile ? 0.10 : 0.2}
       position={[0, 0, 0]}
     />
   );
@@ -36,7 +39,6 @@ function Butterfly() {
 export default function Scene({ theme }) {
   return (
     <Canvas camera={{ position: [0, 0, 9], fov: 42 }}>
-
       <ambientLight intensity={1.8} />
 
       <directionalLight
@@ -85,7 +87,6 @@ export default function Scene({ theme }) {
         enablePan={false}
         autoRotate={false}
       />
-
     </Canvas>
   );
 }
