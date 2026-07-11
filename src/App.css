@@ -1712,7 +1712,7 @@ opacity:.3;
 }
 
 .socials a{
-    font-size:11px;
+    font-size:10px;
 }
 
   /* دست نخورده */
@@ -2397,4 +2397,17 @@ display:none;
 }
 
 }
+@media (max-width: 768px) {
+  body.fa .socials a {
+    font-size: 10px; /* هر عددی که دوست داری */
+  }
+}
+@media (max-width: 768px) {
+  body.fa .socials {
+    gap: 8px;
+  }
 
+  body.fa .socials a {
+    font-size: 10px;
+  }
+}
