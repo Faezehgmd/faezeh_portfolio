@@ -744,7 +744,7 @@ align-items: center;
 /* فقط هنگام انتخاب زبان فارسی */
 body.fa {
   font-family: "Sakkal Majalla";
-  direction: rtl;
+ 
 }
 
 /* تیترها در حالت فارسی */
@@ -1720,7 +1720,7 @@ opacity:.3;
     flex:1;
     order:2;
 
-    width:42%;
+    width:40%;
     height:320px;
 
     display:flex;
