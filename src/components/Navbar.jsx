@@ -50,7 +50,7 @@ export default function Navbar({
             className="lang-btn"
             onClick={changeLanguage}
           >
-            {language === "en" ? "🇮🇷" : "🇺🇸"}
+            {language === "en" ? "🇮🇷" : "ENG"}
           </button>
 
           <button
