@@ -744,6 +744,7 @@ align-items: center;
 /* فقط هنگام انتخاب زبان فارسی */
 body.fa {
   font-family: "Sakkal Majalla";
+  direction: rtl;
  
 }
 
