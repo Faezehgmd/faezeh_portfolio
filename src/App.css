@@ -2431,3 +2431,27 @@ body.fa .nav-actions{
 body.fa .mobile-menu{
     direction: ltr;
 }
+@media (max-width:768px){
+
+  body.fa .navbar{
+    direction:ltr;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+  }
+
+  body.fa .logo{
+    direction:ltr;
+    white-space:nowrap;
+  }
+
+  body.fa .nav-actions{
+    direction:ltr;
+    flex-direction:row;
+  }
+
+  body.fa .lang-btn{
+    direction:ltr;
+  }
+
+}
